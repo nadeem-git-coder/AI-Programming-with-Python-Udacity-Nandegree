@@ -10,6 +10,7 @@ from torchvision import datasets, models, transforms
 from PIL import Image
 
 def load_model():
+    #model
     model_info = torch.load(args.model_checkpoint)
     model = model_info['model']
     model.classifier = model_info['classifier']
